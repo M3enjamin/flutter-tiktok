@@ -1,0 +1,34 @@
+{
+  "home": "Home",
+  "@home": {
+    "description": "home"
+  },
+  "discover": "Discover",
+  "@discover": {
+    "description": "discover"
+  },
+  "inbox": "Inbox",
+  "@inbox": {
+    "description": "inbox"
+  },
+  "me": "Me",
+  "@me": {
+    "description": "me"
+  },
+  "following": "Following",
+  "@following": {
+    "description": "following"
+  },
+  "for_you": "For you",
+  "@for_you": {
+    "description": "for_you"
+  },
+  "follower": "Follower",
+  "@follower": {
+    "description": "follower"
+  },
+  "like": "Like",
+  "@like": {
+    "description": "like"
+  }
+}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tik_tok_ui/theme/colors.dart';
+import 'package:marquee_flutter/marquee_flutter.dart';
+import 'package:flutter_tiktok/themes/colors.dart';
 
 class LeftPanel extends StatelessWidget {
   final String name;
@@ -47,12 +48,17 @@ class LeftPanel extends StatelessWidget {
                 color: white,
                 size: 15,
               ),
-              Flexible(
-                child: Text(
-                  songName,
-                  style: TextStyle(color: white, height: 1.5),
-                ),
-              )
+              SizedBox(
+                  width: size.width / 2,
+                  child: Container(
+                    height: 30,
+                    child: MarqueeWidget(
+                      text: songName,
+                      textStyle: TextStyle(color: white, height: 1.5),
+                      scrollAxis: Axis.horizontal,
+                      ratioOfBlankToScreen: 0.1,
+                    ),
+                  ))
             ],
           )
         ],

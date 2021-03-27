@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:tik_tok_ui/pages/root_app.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_tiktok/pages/root_app.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
     home: RootApp(),
+    localizationsDelegates: [
+      AppLocalizations.delegate,
+      GlobalMaterialLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate,
+    ],
+    debugShowCheckedModeBanner: false,
+    supportedLocales: [
+      const Locale('fr', ''),
+      const Locale('es', ''),
+      const Locale('en', ''),
+    ],
   ));
 }
-

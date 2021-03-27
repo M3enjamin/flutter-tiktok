@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tik_tok_ui/theme/colors.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_tiktok/themes/colors.dart';
 
-class HeaderHomePage extends StatelessWidget {
-  const HeaderHomePage({
+class HomePageHeader extends StatelessWidget {
+  const HomePageHeader({
     Key key,
   }) : super(key: key);
 
@@ -12,7 +13,7 @@ class HeaderHomePage extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          "Following",
+          AppLocalizations.of(context).following,
           style: TextStyle(
             color: white.withOpacity(0.7),
             fontSize: 16,
@@ -32,7 +33,7 @@ class HeaderHomePage extends StatelessWidget {
           width: 8,
         ),
         Text(
-          "For You",
+          AppLocalizations.of(context).for_you,
           style: TextStyle(
               color: white, fontSize: 17, fontWeight: FontWeight.w500),
         )
